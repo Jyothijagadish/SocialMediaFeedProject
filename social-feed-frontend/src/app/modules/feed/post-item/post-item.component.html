@@ -1,0 +1,7 @@
+<div class="post">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.description }}</p>
+    <img *ngIf="post.media_url" [src]="post.media_url" alt="Post Media" />
+    <p>{{ post.createdAt | date }}</p>
+  </div>
+  
